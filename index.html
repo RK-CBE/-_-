@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>நாடி ஜோதிடம் - Divine Naadi</title>
+    <style>
+        :root {
+            --bg-light: #FDFBF7;       /* Soft Cream */
+            --primary-color: #7A0A16;  /* Deep Maroon / Burgundy */
+            --primary-hover: #59040D;
+            --accent-color: #EBB62D;   /* Astro Gold */
+            --text-dark: #222222;
+            --text-light: #ffffff;
+            --card-bg: #ffffff;
+            --border-color: #EFE9DB;
+            --hover-bg: #F9F5EC;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', -apple-system, sans-serif; }
+        body { background-color: var(--bg-light); color: var(--text-dark); line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
+        
+        /* Header Match */
+        header { background-color: var(--primary-color); border-bottom: 4px solid var(--accent-color); box-shadow: 0 2px 8px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+        .nav-container { max-width: 900px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; }
+        .logo { display: flex; align-items: center; gap: 10px; font-size: 1.3rem; font-weight: bold; color: var(--text-light); text-decoration: none; }
+        .logo svg { fill: var(--accent-color); width: 28px; height: 28px; }
+        nav { display: flex; gap: 5px; }
+        .nav-btn { padding: 8px 16px; font-size: 1rem; font-weight: 600; color: var(--text-light); text-decoration: none; border-radius: 4px; transition: all 0.2s ease; }
+        .nav-btn:hover, .nav-btn.active { background-color: var(--accent-color); color: var(--text-dark); }
+        
+        main { max-width: 900px; width: 100%; margin: 30px auto; padding: 0 20px; flex: 1; }
+        .hero { text-align: center; padding: 30px 15px; margin-bottom: 30px; background: var(--card-bg); border: 1px solid var(--border-color); border-top: 4px solid var(--primary-color); border-radius: 4px; }
+        .hero h1 { color: var(--primary-color); margin-bottom: 10px; font-size: 1.8rem; }
+        .hero p { color: var(--text-dark); opacity: 0.8; font-size: 1rem; }
+        
+        .faq-links-list { display: flex; flex-direction: column; gap: 15px; margin-bottom: 40px; }
+        .faq-link-item { background-color: var(--card-bg); border: 1px solid var(--border-color); border-left: 4px solid var(--primary-color); border-radius: 4px; padding: 20px; display: flex; justify-content: space-between; align-items: center; text-decoration: none; transition: all 0.2s; }
+        .faq-link-item:hover { border-color: var(--accent-color); background-color: var(--hover-bg); transform: translateX(4px); }
+        .faq-topic-title { font-size: 1.15rem; font-weight: 600; color: var(--primary-color); line-height: 1.4; }
+        .arrow-icon { color: var(--accent-color); font-size: 1.3rem; font-weight: bold; padding-left: 15px; }
+        
+        .planets-accent { display: flex; justify-content: center; gap: 12px; margin: 30px 0; flex-wrap: wrap; }
+        .planet-badge { background-color: var(--card-bg); border: 1px solid var(--border-color); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; color: var(--primary-color); font-weight: 600; }
+        
+        footer { background-color: var(--primary-color); color: var(--text-light); text-align: center; padding: 20px; font-size: 0.9rem; margin-top: auto; border-top: 4px solid var(--accent-color); }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                <span>நாடி ஜோதிடம் - Divine Naadi</span>
+            </a>
+            <nav>
+                <a href="index.html" class="nav-btn active">முகப்பு (FAQ)</a>
+                <a href="about.html" class="nav-btn">எங்களைப் பற்றி</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <h1>நாடி ஜோதிட பற்றிய பொதுவான கேள்வி பதில்கள்</h1>
+            <p>விரிவான விளக்கத்தைப் பெறக் கீழே உள்ள தலைப்புகளை அழுத்துங்கள்.</p>
+        </div>
+        <div class="faq-links-list">
+            <a href="topic1.html" class="faq-link-item">
+                <span class="faq-topic-title">1. செய்வினையால் பாதிக்கப்பட்டவர்கள் இருக்கிறார்கள்</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic2.html" class="faq-link-item">
+                <span class="faq-topic-title">2. குழந்தைகளை கெட்ட வார்த்தைகளால் திட்டாதீர்கள்</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic3.html" class="faq-link-item">
+                <span class="faq-topic-title">3. குழந்தையின் எதிர்காலத்தைத் துல்லியமாகக் கூறிய ஓலை</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic4.html" class="faq-link-item">
+                <span class="faq-topic-title">4. TBC வெளிநாட்டில் வசிப்பவர்களுக்கு நாடி ஜோதிடம்</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic5.html" class="faq-link-item">
+                <span class="faq-topic-title">5. நாடியால் நாள்தோறும் நிகழும் அதிசயங்கள்</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic6.html" class="faq-link-item">
+                <span class="faq-topic-title">6. மறைந்தவர்களுக்கு தர்ப்பணம் செய்யாமல் இருந்தால் ஏற்படும் பாதிப்பு</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic7.html" class="faq-link-item">
+                <span class="faq-topic-title">7. ஜாதகத்தில் 5-ஆம் இடம் கெட்டுப்போனால் பேரிழப்பு</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic8.html" class="faq-link-item">
+                <span class="faq-topic-title">8. எந்த ரகசியமும் நாடி ஜோதிடத்தில் தப்பாது</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic9.html" class="faq-link-item">
+                <span class="faq-topic-title">9. வாழ்க்கையே ஏமாற்றம் ஆக போகுது</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic10.html" class="faq-link-item">
+                <span class="faq-topic-title">10. இந்த ஜோடிக்கு விவாகரத்து உறுதி</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic11.html" class="faq-link-item">
+                <span class="faq-topic-title">11. நீங்கள் எப்படி இருப்பீர்கள் என்பதைத் தெளிவாகச் சொல்கிறது.</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic12.html" class="faq-link-item">
+                <span class="faq-topic-title">12. வன்மம், கா*மம், குரோதம்</span>
+                <span class="arrow-icon">➔</span>
+            </a>                                                
+            <a href="topic13.html" class="faq-link-item">
+                <span class="faq-topic-title">13. எல்லா நாளும் இறைவனுக்கே உரியது</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic14.html" class="faq-link-item">
+                <span class="faq-topic-title">14. கோவில் தரிசனத்தில் தவிர்க்க வேண்டிய தவறுகள்</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic15.html" class="faq-link-item">
+                <span class="faq-topic-title">15. கோவிலில் முழுப் பலன் பெறும் வழிபாட்டு முறை</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic16.html" class="faq-link-item">
+                <span class="faq-topic-title">16. வீட்டில் விளக்கு ஏற்றும்போது பெண்கள் அழக்கூடாது</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic17.html" class="faq-link-item">
+                <span class="faq-topic-title">17. பிரிந்த கணவன்–மனைவி மீண்டும் இணைய எளிய வழி</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic18.html" class="faq-link-item">
+                <span class="faq-topic-title">18. வீட்டில் செல்வம் செழிக்க</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic19.html" class="faq-link-item">
+                <span class="faq-topic-title">19. ஒருத்தரோட இறப்புக்கே கர்மா தான் காரணம்</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic20.html" class="faq-link-item">
+                <span class="faq-topic-title">20. அதிக கடனால் தவிக்குறீங்களா ?</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic21.html" class="faq-link-item">
+                <span class="faq-topic-title">21. பெற்றோர் ஆன்மா உங்களை தேடிகிட்டே இருக்கும்</span>
+                <span class="arrow-icon">➔</span>
+            </a>                                                                                                
+            <a href="topic22.html" class="faq-link-item">
+                <span class="faq-topic-title">22. குழந்தை பிறக்காமல் போவதற்கு காரணமே இதான்</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic23.html" class="faq-link-item">
+                <span class="faq-topic-title">23. குலதெய்வம் மட்டும் அனுமதி கொடுக்கலைன்னா</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic24.html" class="faq-link-item">
+                <span class="faq-topic-title">24. நாடி ஜோதிடம் குறித்து வந்த கமெண்ட்களுக்கு பதிலளித்த நாடி ஜோதிடர்</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic25.html" class="faq-link-item">
+                <span class="faq-topic-title">25. ஒன்று முதல் 12 காண்டங்கள் </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic26.html" class="faq-link-item">
+                <span class="faq-topic-title">26 வீட்டுல எல்லாரும் கஷ்டப்படுறதுக்கு காரணம்</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic27.html" class="faq-link-item">
+                <span class="faq-topic-title">27. மருத்துவரே காப்பாற்ற முடியாது என்று கூறிவிட்டார்.</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic28.html" class="faq-link-item">
+                <span class="faq-topic-title">28. புற்றுநோய் இருப்பதை முன்னரே சொல்லிய நாடி.</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic29.html" class="faq-link-item">
+                <span class="faq-topic-title">29. 26 வயதில் திருமணம் செய்ய கூடாதா</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic30.html" class="faq-link-item">
+                <span class="faq-topic-title">30. இரட்டை குழந்தைகள் </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic31.html" class="faq-link-item">
+                <span class="faq-topic-title">31. திருமண பொருத்தம் 1</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic32.html" class="faq-link-item">
+                <span class="faq-topic-title">32. திருமண பொருத்தம் 2</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic33.html" class="faq-link-item">
+                <span class="faq-topic-title">33. கிரகணம்</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic34.html" class="faq-link-item">
+                <span class="faq-topic-title">34. சனி பிடித்தால் குடும்பத்துக்கு பாதிப்பா</span>
+                <span class="arrow-icon">➔</span>
+            </a>          
+            <a href="topic35.html" class="faq-link-item">
+                <span class="faq-topic-title">35. நீங்க என்ன நோக்கத்துக்காக உள்ள வந்துருக்கீங்கன்னு எனக்கு தெரியும் </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic36.html" class="faq-link-item">
+                <span class="faq-topic-title">36. நாடி ஜோதிடத்தில் முன்கூட்டியே இற*ப்பை சொல்ல முடியுமா ? </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic37.html" class="faq-link-item">
+                <span class="faq-topic-title">37. ஜோடியின் அங்க அடையாளங்களை என்னால் சொல்ல முடியும்? </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic38.html" class="faq-link-item">
+                <span class="faq-topic-title">38. உங்க வாழ்க்கை மார்ச் மாதத்திற்கு அப்புறம் இதுதான் நடக்கும் </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic39.html" class="faq-link-item">
+                <span class="faq-topic-title">39. ராகு-கேது  </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic40.html" class="faq-link-item">
+                <span class="faq-topic-title">40. நாடி ஜோதிடம் என்றால் என்ன ? - 1 </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic41.html" class="faq-link-item">
+                <span class="faq-topic-title">41. நாடி ஜோதிடம் என்றால் என்ன ?  - 2 </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic42.html" class="faq-link-item">
+                <span class="faq-topic-title">42. நாடி ஜோதிடம் என்றால் என்ன ?  - 3 </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic43.html" class="faq-link-item">
+                <span class="faq-topic-title">43.  </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic44.html" class="faq-link-item">
+                <span class="faq-topic-title">44. திருமணம் முடிஞ்சி என்ன நடக்கும்னு கணிக்க முடியும் </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic45.html" class="faq-link-item">
+                <span class="faq-topic-title">45. ரிஷிகள் வழிபட்ட தெய்வங்கள் என்ன ? </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic46.html" class="faq-link-item">
+                <span class="faq-topic-title">46. மனிதனின் பிறப்பு, இறப்பு இந்த ஓலைச்சுவடி இருக்கு </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic47.html" class="faq-link-item">
+                <span class="faq-topic-title">47. கடவுள் இல்லை என்பவரே அதிகம் கடவுளை யோசிப்பான் </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic48.html" class="faq-link-item">
+                <span class="faq-topic-title">48. சனி நல்லவங்களுக்கு நல்லவன் கெட்டவங்களுக்கு கெட்டவன் </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic49.html" class="faq-link-item">
+                <span class="faq-topic-title">49. இந்த ராசிக்காரர்கள் வாகன போக்குவரத்தில் எச்சரிக்கையாக இருக்கனும் </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic50.html" class="faq-link-item">
+                <span class="faq-topic-title">50. சனி பிடித்தால் குடும்பத்துக்கு பாதிப்பா ? </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic51.html" class="faq-link-item">
+                <span class="faq-topic-title">51. மார்ச் 6-ஆம் தேதி மேஷம் கன்னி ராசிக்கு </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic52.html" class="faq-link-item">
+                <span class="faq-topic-title">52.  </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic53.html" class="faq-link-item">
+                <span class="faq-topic-title">53. சனி பிடிக்க முக்கிய காரணம் இதுதான் </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic54.html" class="faq-link-item">
+                <span class="faq-topic-title">54. ஜோதிடர் சொன்ன அந்த வார்த்தை - அறிகுறி காட்டிய சாமி </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic55.html" class="faq-link-item">
+                <span class="faq-topic-title">55. முன்னாடியே இப்படி நடக்கும்னு எச்சரித்தேன் </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic56.html" class="faq-link-item">
+                <span class="faq-topic-title">56. படிப்பு முதல் திருமணம் வரை - எதிர்காலத்தை கணிக்கும் நாடி ஜோதிடர் </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic57.html" class="faq-link-item">
+                <span class="faq-topic-title">57. தீய கர்மாவை முன்கூட்டியே எச்சரிக்கும் நாடி ஜோதிடம்! </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic58.html" class="faq-link-item">
+                <span class="faq-topic-title">58. தனக்கே நாடி பார்த்துக் கொண்ட நாடி ஜோதிடர் </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic59.html" class="faq-link-item">
+                <span class="faq-topic-title">59. தாம்பத்தியம் மட்டும் சுகம் இல்லை </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic60.html" class="faq-link-item">
+                <span class="faq-topic-title">60. விட்டுக்கொடுத்து வாழ்வது. இரண்டு தாரம் என்று விதிக்கப்பட்டாலும் மாற்ற முடியுமா? </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic61.html" class="faq-link-item">
+                <span class="faq-topic-title">61. இரண்டு லக்கணங்களுக்கு திருமண வாய்ப்பு குறைவா? </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic62.html" class="faq-link-item">
+                <span class="faq-topic-title">62. கர்ம வினையும் கலைத்துறைக் கனவும் </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic63.html" class="faq-link-item">
+                <span class="faq-topic-title">63. கருத்தரிக்கும் யோகம் இல்லையா? </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic64.html" class="faq-link-item">
+                <span class="faq-topic-title">64. திருமணப் பொருத்தத்தில் நிகழும் தவறுகள்</span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic65.html" class="faq-link-item">
+                <span class="faq-topic-title">65. உடலில் மச்சம் இருக்கும் இடங்களை சரியாக சொன்ன ஓலை </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic66.html" class="faq-link-item">
+                <span class="faq-topic-title">66. கேள்வி பதில் </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic_AA_01.html" class="faq-link-item">
+                <span class="faq-topic-title">67. தீர்க்க முடியாத பிரச்சனையே இல்லை </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic_AA_02.html" class="faq-link-item">
+                <span class="faq-topic-title">68. வாழ்க்கை முடிந்துவிட்டதென்று நினைக்காதீர்கள்!  </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic_AA_03.html" class="faq-link-item">
+                <span class="faq-topic-title">69. கை விரல் ரேகை சொல்லும் வாழ்க்கை ரகசியம் </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic_AA_04.html" class="faq-link-item">
+                <span class="faq-topic-title">70. ஐந்து சிறப்புக் காண்டங்கள் </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic_AA_05.html" class="faq-link-item">
+                <span class="faq-topic-title">71. கேள்வி பதில்கள் - 2 </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic_AA_06.html" class="faq-link-item">
+                <span class="faq-topic-title">72. என் வாழ்க்கை மாறிய தருணம் </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic_AA_07.html" class="faq-link-item">
+                <span class="faq-topic-title">73. கேள்வி பதில்கள் - 3 </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic_AA_08.html" class="faq-link-item">
+                <span class="faq-topic-title">74. இந்த ஜென்மத்தில் கஷ்டம் அனுபவிக்கக் காரணம் என்ன? </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic_AA_09.html" class="faq-link-item">
+                <span class="faq-topic-title">75. வெளிநாட்டில் இருப்பவர்கள் நாடி ஜோதிடம் பார்க்கலாம் </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic76.html" class="faq-link-item">
+                <span class="faq-topic-title">35. நீங்க என்ன நோக்கத்துக்காக உள்ள வந்துருக்கீங்கன்னு எனக்கு தெரியும் </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic77.html" class="faq-link-item">
+                <span class="faq-topic-title">35. நீங்க என்ன நோக்கத்துக்காக உள்ள வந்துருக்கீங்கன்னு எனக்கு தெரியும் </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic78.html" class="faq-link-item">
+                <span class="faq-topic-title">35. நீங்க என்ன நோக்கத்துக்காக உள்ள வந்துருக்கீங்கன்னு எனக்கு தெரியும் </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+            <a href="topic79.html" class="faq-link-item">
+                <span class="faq-topic-title">35. நீங்க என்ன நோக்கத்துக்காக உள்ள வந்துருக்கீங்கன்னு எனக்கு தெரியும் </span>
+                <span class="arrow-icon">➔</span>
+            </a>
+                                                                                                                                                                                                                                                                                                                                     
+        </div>
+
+    </main>
+    <footer><p>&copy;<script>document.write(new Date().getFullYear());</script> நாடி ஜோதிடம் - Divine Naadi அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</p></footer>
+</body>
+</html>
