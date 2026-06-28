@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>தமிழ் ஜோதிடம் - எங்களைப் பற்றி</title>
+    <style>
+        :root { --bg-color: #faf6f0; --primary-color: #8c1d40; --secondary-color: #d4af37; --text-dark: #2c2523; --text-light: #fff; --card-bg: #ffffff; --border-color: #e6dfd5; --hover-bg: #f5ede2; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', -apple-system, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-dark); line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
+        header { background-color: var(--card-bg); border-bottom: 3px solid var(--secondary-color); box-shadow: 0 2px 8px rgba(140, 29, 64, 0.05); }
+        .nav-container { max-width: 900px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; }
+        .logo { display: flex; align-items: center; gap: 10px; font-size: 1.3rem; font-weight: bold; color: var(--primary-color); text-decoration: none; }
+        .logo svg { fill: var(--secondary-color); width: 28px; height: 28px; }
+        nav { display: flex; gap: 5px; }
+        .nav-btn { padding: 8px 16px; font-size: 1rem; font-weight: 600; color: var(--text-dark); text-decoration: none; border-radius: 4px; transition: all 0.2s ease; }
+        .nav-btn:hover, .nav-btn.active { background-color: var(--primary-color); color: var(--text-light); }
+        main { max-width: 900px; width: 100%; margin: 30px auto; padding: 0 20px; flex: 1; }
+        .about-card { background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; padding: 30px; }
+        h2 { color: var(--primary-color); margin-bottom: 15px; border-bottom: 2px solid var(--border-color); padding-bottom: 8px; }
+        p { margin-bottom: 15px; color: var(--text-dark); font-size: 1.05rem; }
+        footer { background-color: var(--primary-color); color: var(--text-light); text-align: center; padding: 20px; margin-top: auto; border-top: 3px solid var(--secondary-color); }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                <span>தமிழ் ஜோதிடம்</span>
+            </a>
+            <nav>
+                <a href="index.html" class="nav-btn">முகப்பு (FAQ)</a>
+                <a href="about.html" class="nav-btn active">எங்களைப் பற்றி</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="about-card">
+            <h2>எங்களைப் பற்றி (About Us)</h2>
+            <p>வரவேற்கிறோம்! எங்கள் வலைத்தளம் தமிழ் பாரம்பரிய ஜோதிடக் கலை மற்றும் அதன் தத்துவங்களை எளிய முறையில் மக்களிடம் கொண்டு சேர்ப்பதற்காக உருவாக்கப்பட்டது.</p>
+            <p>நவக்கிரகங்களின் இயக்கம், கிரகப் பெயர்ச்சிகள், மற்றும் ஜாதகக் கணிதம் ஆகியவற்றின் பின்னணியில் உள்ள அறிவியல் பூர்வமான உண்மைகளைத் தெளிவுபடுத்துவதே எங்கள் நோக்கம். ஜோதிடம் தொடர்பான உங்களின் அடிப்படைச் சந்தேகங்களுக்குத் துல்லியமான விளக்கங்களை இங்கே நீங்கள் காணலாம்.</p>
+            <p>தொடர்புக்கு: info@tamilastrologyfaq.com</p>
+        </div>
+    </main>
+    <footer><p>&copy; 2026 தமிழ் ஜோதிடம். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</p></footer>
+</body>
+</html>
